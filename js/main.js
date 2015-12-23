@@ -1,0 +1,3 @@
+function fadeOut(x) {
+  
+}
