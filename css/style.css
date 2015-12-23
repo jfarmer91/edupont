@@ -1,4 +1,41 @@
+@font-face {
+  font-family: 'Feronia';
+  src: url('font/feronia/feronia.ttf');
+}
+
 body {
   background-color: #000;
   color: #fff;
+  /*font-family: 'Feronia', 'Tangerine';*/
+  /*src: url('font/feronia/Feronia.ttf') */
 }
+
+#initial-overlay {
+  position: fixed;
+  text-align: center;
+  font-family: 'Montserrat', 'Tangerine';
+  /*vertical-align: middle;*/
+  width: 100%;
+  top: 30%;
+}
+
+#edupont-overlay {
+  font-size: 72px;
+}
+
+#photography-overlay {
+  font-size: 24px;
+}
+
+/* Gradient color1 - color2 - color1 */
+
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+/*h1 {
+  font-family: 'Feronia', 'Tangerine';
+}*/
