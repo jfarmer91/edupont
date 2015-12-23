@@ -11,6 +11,8 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -23,13 +25,21 @@
 </head>
 
 <body>
-  <div id="initial-overlay">
+  <div onload="fadeOut(this)" id="initial-overlay">
     <h1 id="edupont-overlay">eDUPONT</h1>
     <hr class="style-one">
     <h6 id="photography-overlay">photography</h6>
   </div>
   <!-- <img src="img/art/august.jpg" height='500px' alt=""> -->
 </body>
+<script>
+  $(document).ready(function(){
+    $("#edupont-overlay").ready(function(){
+      $("#initial-overlay").fadeOut(2500);
+    });
+  });
+</script>
+
 
 
 </html>
