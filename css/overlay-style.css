@@ -27,7 +27,7 @@ html, body {
 
 #down-arrow {
   position:absolute;
-  top: 85%;
+  top: 90%;
   left: calc((100% - 64px)/2)
 }
 
@@ -71,7 +71,7 @@ html, body {
 
 #pictures-main {
   position: absolute;
-  top: calc(100%);
+  top: calc(105%);
 }
 
 
