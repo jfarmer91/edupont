@@ -2,7 +2,7 @@ html, body {
   height:100%;
   position: flex;
 }
-
+/*overlay start*/
 #initial-overlay {
   display:block;
   color: #fff;
@@ -10,13 +10,25 @@ html, body {
   height: 100vh;
   z-index: 1000;
 }
+#logo-overlay {
+  position: fixed;
+  top: calc((100% - 176px)/2);
+  left: calc((100% - 153px)/2);
+}
+/*overlay end*/
 
 #body-main {
   display:none;
   color: #000;
   background-color: #fff;
-  height: 100vh;
-  z-index: 1000;
+  /*height: 100vh;*/
+  z-index: 1;
+}
+
+#down-arrow {
+  position:absolute;
+  top: 85%;
+  left: calc((100% - 64px)/2)
 }
 
 .logo {
@@ -39,9 +51,15 @@ html, body {
 }
 
 #logo-main {
-  position: fixed;
+  position: absolute;
   top: calc((100% - 176px)/2);
   left: calc((100% - 153px)/2);
+  z-index: 2;
+}
+
+#pictures-main {
+  position: absolute;
+  top: calc(100%);
 }
 
 
