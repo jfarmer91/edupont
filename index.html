@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html dir="ltr" class="dj_webkit dj_chrome dj_contentbox">
+<html lang="en" dir="ltr" class="dj_webkit dj_chrome dj_contentbox">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
 
   <title>eDUPONT Photography</title>
 
@@ -11,7 +11,15 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+  <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -19,23 +27,57 @@
   <script src="js/main.js"></script>
 
   <script src="http://localhost:52815/livereload.js"></script>
-
-
-
 </head>
 
 <body>
-  <div onload="fadeOut(this)" id="initial-overlay">
+  <div id="initial-overlay">
     <h1 id="edupont-overlay">eDUPONT</h1>
     <hr class="style-one">
     <h6 id="photography-overlay">photography</h6>
   </div>
-  <!-- <img src="img/art/august.jpg" height='500px' alt=""> -->
+
+  <div class="container-fluid" id="main-page">
+    <div class="row">
+      <!-- <div class="col-sm-4">
+        <img src="img/art/august.jpg" alt="" width="100%">
+      </div> -->
+      <div class="col-sm-6">
+        <img src="img/art/chicken1.jpg" alt="" width="100%">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/art/chickens2.jpg" alt="" width="100%">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="img/art/wall.jpg" alt="" width="100%">
+      </div>
+      <div class="col-sm-4">
+        <img src="img/art/luna.jpg" alt="" width="100%">
+      </div>
+      <div class="col-sm-4">
+        <img src="img/art/beers.jpg" alt="" width="100%">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="img/art/bicycle.jpg" alt="" width="100%">
+      </div>
+      <div class="col-sm-6">
+        <img src="img/art/wall2.jpg" alt="" width="100%">
+      </div>
+    </div>
+  </div>
+
 </body>
+
+
 <script>
   $(document).ready(function(){
     $("#edupont-overlay").ready(function(){
-      $("#initial-overlay").fadeOut(2500);
+      $("#initial-overlay").delay(2000).fadeOut(2500, function(){
+        $("#main-page").fadeIn(4000);
+      });
     });
   });
 </script>
