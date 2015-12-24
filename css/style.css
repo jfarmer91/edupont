@@ -10,13 +10,23 @@ body {
   /*src: url('font/feronia/Feronia.ttf') */
 }
 
+#main-page {
+  display: none;
+  position: absolute;
+  width: calc(100% - 250px);
+  right:0;
+}
+
 #initial-overlay {
   position: fixed;
   text-align: center;
   font-family: 'Montserrat', 'Tangerine';
   /*vertical-align: middle;*/
+  background-color: #000;
+  height: 100%;
   width: 100%;
-  top: 30%;
+  padding-top: 15%;
+  z-index: 1000;
 }
 
 #edupont-overlay {
@@ -34,6 +44,11 @@ hr.style-one {
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+.col-sm-4 {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 /*h1 {
