@@ -10,11 +10,38 @@ body {
   /*src: url('font/feronia/Feronia.ttf') */
 }
 
+#menu {
+  position: fixed;
+  width:250px;
+  height: 100%;
+}
+
+.logo .edupont {
+  font-size: 52px;
+}
+
+.logo .photography {
+  font-size: 20px;
+}
+
 #main-page {
   display: none;
   position: absolute;
   width: calc(100% - 250px);
+  height: 100%;
   right:0;
+}
+
+.vert-align-shell {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+}
+
+#family-portrait {
+  align-self: center;
 }
 
 #initial-overlay {
@@ -38,7 +65,6 @@ body {
 }
 
 /* Gradient color1 - color2 - color1 */
-
 hr.style-one {
     border: 0;
     height: 1px;
