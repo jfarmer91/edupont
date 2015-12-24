@@ -1,53 +1,25 @@
-@font-face {
-  font-family: 'Feronia';
-  src: url('font/feronia/feronia.ttf');
-}
-
 body {
   background-color: #000;
   color: #fff;
-  /*font-family: 'Feronia', 'Tangerine';*/
-  /*src: url('font/feronia/Feronia.ttf') */
 }
 
-#menu {
-  position: fixed;
-  width:250px;
-  height: 100%;
+.logo {
+  font-family: 'Montserrat';
+  text-align: center;
 }
 
-.logo .edupont {
-  font-size: 52px;
+.img {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 
-.logo .photography {
-  font-size: 20px;
-}
-
-#main-page {
-  display: none;
-  position: absolute;
-  width: calc(100% - 250px);
-  height: 100%;
-  right:0;
-}
-
-.vert-align-shell {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: center;
-
-}
-
-#family-portrait {
-  align-self: center;
-}
 
 #initial-overlay {
   position: fixed;
   text-align: center;
-  font-family: 'Montserrat', 'Tangerine';
+  /*font-family: 'Montserrat', 'Tangerine';*/
   /*vertical-align: middle;*/
   background-color: #000;
   height: 100%;
@@ -72,11 +44,51 @@ hr.style-one {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-.col-sm-4 {
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+.logo .edupont {
+  font-size: 48px;
 }
 
-/*h1 {
-  font-family: 'Feronia', 'Tangerine';
-}*/
+.logo .photography {
+  font-size: 20px;
+}
+
+#main-page {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right:0;
+}
+
+.row-one {
+  vertical-align: bottom;
+}
+
+.vert-align-shell {
+  /*display: flex;*/
+  /*height: 100%;*/
+  width: 100%;
+  /*justify-content: center;*/
+
+}
+
+#family-portrait {
+  /*align-self: center;*/
+}
+
+@media(min-width: 992px) {
+  #menu {
+    position: fixed;
+    width:250px;
+    height: 100%;
+  }
+
+  #main-page {
+    width: calc(100% - 250px);
+  }
+
+  .row-one {
+    height: 50%;
+  }
+}
