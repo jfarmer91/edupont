@@ -31,6 +31,10 @@ html, body {
   left: calc((100% - 64px)/2)
 }
 
+#mobile-dropdown {
+  width: 100%;
+}
+
 .logo {
   font-family: 'Montserrat';
   text-align: center;
