@@ -9,6 +9,7 @@ body {
 }
 
 .img {
+  align-self: center;
   padding-top: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
@@ -61,8 +62,10 @@ hr.style-one {
   right:0;
 }
 
-.row-one {
-  vertical-align: bottom;
+.row-images {
+  display: flex;
+  justify-content: center;
+  /*vertical-align: bottom;*/
 }
 
 .vert-align-shell {
