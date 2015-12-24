@@ -11,17 +11,39 @@ html, body {
   z-index: 1000;
 }
 
+#body-main {
+  display:none;
+  color: #000;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 1000;
+}
 
 .logo {
   font-family: 'Montserrat';
   text-align: center;
 }
 
+.logo-text-big {
+  font-size: 76px;
+}
+
+.logo-text-small {
+  font-size: 20px;
+}
+
 #logo-overlay {
   position: fixed;
-  top: calc((100% - 95px)/2);
-  left: calc((100% - 185px)/2);
+  top: calc((100% - 176px)/2);
+  left: calc((100% - 153px)/2);
 }
+
+#logo-main {
+  position: fixed;
+  top: calc((100% - 176px)/2);
+  left: calc((100% - 153px)/2);
+}
+
 
 
 /* Gradient color1 - color2 - color1 */
