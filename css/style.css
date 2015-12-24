@@ -1,6 +1,7 @@
-body {
+html, body {
   background-color: #000;
   color: #fff;
+  height:100%;
 }
 
 .logo {
@@ -39,7 +40,7 @@ body {
 /* Gradient color1 - color2 - color1 */
 hr.style-one {
     border: 0;
-    height: 1px;
+    height: 1.25px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
@@ -61,9 +62,6 @@ hr.style-one {
   right:0;
 }
 
-.row-one {
-  vertical-align: bottom;
-}
 
 .vert-align-shell {
   /*display: flex;*/
@@ -75,6 +73,25 @@ hr.style-one {
 
 #family-portrait {
   /*align-self: center;*/
+}
+
+@media(min-width: 768px) {
+  .row-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img {
+    align-self: center;
+  }
+
+  .img-row-one {
+    align-self: flex-end;
+  }
+
+  .img-row-two {
+    align-self: flex-start;
+  }
 }
 
 @media(min-width: 992px) {
@@ -89,6 +106,6 @@ hr.style-one {
   }
 
   .row-one {
-    height: 50%;
+    /*height: 50%;*/
   }
 }
