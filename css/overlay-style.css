@@ -12,8 +12,8 @@ html, body {
 }
 #logo-overlay {
   position: fixed;
-  top: calc((100% - 176px)/2);
-  left: calc((100% - 153px)/2);
+  top: calc((100% - 145px)/2);
+  left: calc((100% - 275px)/2);
 }
 /*overlay end*/
 
@@ -49,7 +49,7 @@ html, body {
 }
 
 .logo-text-big {
-  font-size: 76px;
+  font-size: 48px;
 }
 
 .logo-text-small {
@@ -58,14 +58,14 @@ html, body {
 
 #logo-overlay {
   position: fixed;
-  top: calc((100% - 176px)/2);
-  left: calc((100% - 153px)/2);
+  top: calc((100% - 145px)/2);
+  left: calc((100% - 275px)/2);
 }
 
 #logo-main {
   position: absolute;
-  top: calc((100% - 176px)/2);
-  left: calc((100% - 153px)/2);
+  top: calc((100% - 145px)/2);
+  left: calc((100% - 275px)/2);
   z-index: 2;
 }
 
